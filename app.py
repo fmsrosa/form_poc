@@ -1,6 +1,6 @@
-import streamlit as st
 import folium
-import clipboard
+from streamlit_folium import st_folium
+import streamlit as st
 
 if 'clicked' not in st.session_state:
     st.session_state.clicked = False
@@ -20,15 +20,8 @@ option = st.selectbox(
 )
 
 
-# map   
-import folium as fl
-from streamlit_folium import st_folium
-import streamlit as st
-
-m = fl.Map()
-
-m.add_child(fl.LatLngPopup())
-
+m = folium.Map()
+m.add_child(folium.LatLngPopup())
 maps = st_folium(m, height=350, width=700)
 
 if maps['last_clicked']:
