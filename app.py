@@ -3,7 +3,7 @@ import folium
 import clipboard
 
 import subprocess
-subprocess.run(["apt-get install xclip"]) 
+subprocess.run(["sudo apt-get install xclip"]) 
 
 
 if 'clicked' not in st.session_state:
