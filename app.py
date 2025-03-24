@@ -2,6 +2,9 @@ import streamlit as st
 import folium
 import clipboard
 
+import subprocess
+subprocess.run(["apt-get install xclip"]) 
+
 
 if 'clicked' not in st.session_state:
     st.session_state.clicked = False
