@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-import pyperclip
+import clipboard
 
 
 if 'clicked' not in st.session_state:
@@ -40,7 +40,7 @@ with col2:
 
     if st.session_state.clicked:
 
-        pasted = pyperclip.paste()
+        pasted = clipboard.paste()
         st.session_state.clicked = False
         if "LATLNG" in pasted:
             st.session_state.coordinates = pasted[6:]
