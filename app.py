@@ -5,26 +5,24 @@ from PIL import Image
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
-from dotenv import load_dotenv
 from googleapiclient.http import MediaIoBaseUpload
 import io
 import os
 
 
-load_dotenv()
 
 service_account_info = {
-    "type": os.getenv("type"),
-    "project_id": os.getenv("project_id"),
-    "private_key_id": os.getenv("private_key_id"),
-    "private_key": os.getenv("private_key").replace('\\n', '\n') if os.getenv("private_key") else None,
-    "client_email": os.getenv("client_email"),
-    "client_id": os.getenv("client_id"),
-    "auth_uri": os.getenv("auth_uri"),
-    "token_uri": os.getenv("token_uri"),
-    "auth_provider_x509_cert_url": os.getenv("auth_provider_x509_cert_url"),
-    "client_x509_cert_url": os.getenv("client_x509_cert_url"),
-    "universe_domain": os.getenv("universe_domain")
+    "type": st.secrets["type"],
+    "project_id": st.secrets["project_id"],
+    "private_key_id": st.secrets["private_key_id"],
+    "private_key": st.secrets["private_key"].replace('\\n', '\n') if st.secrets["private_key"] else None,
+    "client_email": st.secrets["client_email"],
+    "client_id": st.secrets["client_id"],
+    "auth_uri": st.secrets["auth_uri"],
+    "token_uri": st.secrets["token_uri"],
+    "auth_provider_x509_cert_url": st.secrets["auth_provider_x509_cert_url"],
+    "client_x509_cert_url": st.secrets["client_x509_cert_url"],
+    "universe_domain": st.secrets["universe_domain"]
 }
 
 # Ensure private_key is properly formatted
