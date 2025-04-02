@@ -12,7 +12,7 @@ It is a POC showcasing a form containing:
 
 Other than the upload to Google Drive Account, that occurs after clicking Submit, the rest is not used in any further operation.
 
-App is deployed at (https://formpoc-dakba4brtxrjoca3mi2z6f.streamlit.app/)[https://formpoc-dakba4brtxrjoca3mi2z6f.streamlit.app/]
+App is deployed at [https://formpoc-dakba4brtxrjoca3mi2z6f.streamlit.app/](https://formpoc-dakba4brtxrjoca3mi2z6f.streamlit.app/)
 
 ## Repository structure
 
@@ -58,7 +58,7 @@ App is deployed at (https://formpoc-dakba4brtxrjoca3mi2z6f.streamlit.app/)[https
 **You need a Google Account for this part.**
 
 Create a service account following. Instructions at 
-(https://developers.google.com/android/management/service-account)[https://developers.google.com/android/management/service-account].
+[https://developers.google.com/android/management/service-account](https://developers.google.com/android/management/service-account).
 
 Do not forget to enable access to Google Drive API.
 
@@ -76,7 +76,7 @@ Since streamlit.secrets expects a .toml and we will want to deploy the app on St
 
 You can do this manually.
 
-For more information regarding on secret management on Streamlit check (https://docs.streamlit.io/develop/api-reference/connections/secrets.toml)[https://docs.streamlit.io/develop/api-reference/connections/secrets.toml].
+For more information regarding on secret management on Streamlit check [https://docs.streamlit.io/develop/api-reference/connections/secrets.toml](https://docs.streamlit.io/develop/api-reference/connections/secrets.toml).
 
 ## Run locally
 
@@ -92,7 +92,7 @@ You will need to commit your code to a Github repo and make it public first.
 
 ### Login in Streamlit Cloud
 
-You can login at (https://share.streamlit.io/)[https://share.streamlit.io/] using your Github account.
+You can login at [https://share.streamlit.io/](https://share.streamlit.io/) using your Github account.
 
 ### Create your app
 
